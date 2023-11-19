@@ -8,6 +8,12 @@ Para cada una de las implementaciones se realizó un script de prueba que mide e
 
 ## Como ejecutar
 
+Se requiere tener instalado python3 y la libreria matplotlib.
+Este ultimo se puede instalar con el siguiente comando:
+
+```bash
+pip install matplotlib
+```
 Para ejecutar el script de prueba de una implementación se debe ejecutar el siguiente comando:
 
 ```bash
@@ -24,6 +30,14 @@ Cada uno imprime en pantalla los primeros 72 valores de la secuencia de `f36`.
 
 Se cuenta con una grafica que muestra el tiempo de ejecución de cada una de las implementaciones para diferentes valores de entrada.
 Esta grafica se encuentra en el archivo `resultados.png`.
+Si se desea realizar nuevas pruebas se puede ejecutar el script `efficiency.py` con el siguiente comando:
+
+```bash
+python efficiency.py
+```
+Este script realiza las pruebas de los 3 algoritmos y genera la grafica `resultados.png`.
+Para las pruebas se utilizan los valores de entrada del 18 al 72 y se realizan 1000 pruebas para cada valor de entrada.
+Esto porque para valores menores a 18 no se realizan llamadas recursivas y para valores mayores a 72 el tiempo de ejecución es muy alto para la implementación recursiva.
 
 ## Conclusiones
 
